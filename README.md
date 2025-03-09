@@ -1,4 +1,4 @@
-# Chat with PDF using hybrid RAG
+# Chat with PDF using `hybrid` RAG
 A simple RAG (Retrieval-Augmented Generation) system using Deepseek, LangChain, and Streamlit to chat with PDFs and answer complex questions about your local documents. This project improves the accuracy of the RAG by using a hybrid approach of retrieval leveraging both **semantic** and **bm25** Best match 25 search.
 
 
