@@ -8,7 +8,6 @@ Activate the Virtual Environment
 ```
 source my_env1/bin/activate
 .\my_env1\Scripts\Activate
-
 ```
 
 Install Ollama on your local machine from the [official website](https://ollama.com/). And then pull the Deepseek model:
