@@ -1,7 +1,17 @@
 streamlit
-langchain_core
-langchain_community
-langchain_ollama
-pdfplumber
-rank_bm25
+# ray
+faiss-cpu
+numpy
 nltk
+pdfplumber
+transformers
+torch
+sentence-transformers
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+ollama
+trl
+peft
+rank_bm25
