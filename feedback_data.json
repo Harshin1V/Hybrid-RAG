@@ -1,0 +1,62 @@
+[
+    {
+        "question": "whats in article 7?",
+        "answer": " I'm sorry for any confusion, but there is no Article 7 in the provided context documents (pdfs/eng.pdf).",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:54:53.649591"
+    },
+    {
+        "question": "whats in article 8",
+        "answer": " Article 8 of the provided documents states that \"Everyone has the right to an effective remedy by the competent national tribunals.\"",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:55:27.996882"
+    },
+    {
+        "question": "whats in article 6",
+        "answer": " Article 6 from the provided documents states that \"Everyone has the right to recognition everywhere as a person before the law.\"",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:55:44.869958"
+    },
+    {
+        "question": "whats in article 11",
+        "answer": " The provided context does not include an Article 11. Therefore, I cannot provide the content of that article as it is not available within the given documents.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:56:01.642460"
+    },
+    {
+        "question": "whats in article 19",
+        "answer": " Article 19 grants everyone the right to freedom of opinion and expression. This right includes the freedom to hold opinions without interference, and to seek, receive, and impart information and ideas through any media and regardless of frontiers.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:56:25.937148"
+    },
+    {
+        "question": "whats in article 11",
+        "answer": " Article 11, as per your provided context, states \"Everyone charged with a penal offence has the right to be presumed innocent.\" This means that when someone is accused of a crime, they are assumed to be not guilty until proven otherwise.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:57:45.457221"
+    },
+    {
+        "question": "whats in article 19",
+        "answer": " In Article 19, everyone has the right to freedom of opinion and expression, which includes the right to hold opinions without interference and to seek, receive, and impart information and ideas through any media.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 22:58:09.664471"
+    },
+    {
+        "question": "whats in article 13 ",
+        "answer": " Article 13 discusses the right to freedom of movement and residence within the given context.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 23:01:51.123459"
+    },
+    {
+        "question": "whats in article 13 ",
+        "answer": " Article 13 discusses everyone's right to freedom of movement and residence within each State.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 23:04:24.835853"
+    },
+    {
+        "question": "whats in article 13 ",
+        "answer": " Article 13 outlines two fundamental rights:\n   1. The right to freedom of movement within a State's borders.\n   2. The right to leave any country, including one's own, and return to it.",
+        "feedback": "Yes",
+        "timestamp": "2025-03-25 23:04:34.044611"
+    }
+]
