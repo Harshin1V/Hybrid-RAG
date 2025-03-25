@@ -46,6 +46,12 @@ pip install sentence-transformers
 ### Running the Streamlit App
 ```bash
 streamlit run app.py
+
+ollama list
+ollama pull mistral:latest
+ollama pull llama2:latest
+ollama pull phi:latest
+
 ```
 - Upload a PDF document.
 - Ask questions in the chat input.
