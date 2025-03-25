@@ -44,13 +44,21 @@ class AdvancedRAGSystem:
         os.makedirs("pdfs", exist_ok=True)
         os.makedirs("models", exist_ok=True)
         os.makedirs("feedback", exist_ok=True)
-    
+
+
     def _initialize_nltk(self):
         """Download necessary NLTK resources."""
         try:
-            nltk.download('punkt', quiet=True)
-        except Exception as e:
-            st.error(f"NLTK initialization failed: {e}")
+            nltk.data.find('tokenizers/punkt')
+            st.info("Punkt tokenizer already available.")
+        except LookupError:
+            st.warning("Punkt tokenizer not found. Downloading it now...")
+            try:
+                nltk.download('punkt', quiet=False)
+                st.success("Punkt tokenizer downloaded successfully.")
+            except Exception as e:
+                st.error(f"NLTK initialization failed: {e}")
+
     
     def _initialize_session_state(self):
         """Initialize Streamlit session state variables."""
