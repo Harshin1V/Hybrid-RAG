@@ -49,15 +49,13 @@ class AdvancedRAGSystem:
     def _initialize_nltk(self):
         """Download necessary NLTK resources."""
         try:
-            nltk.data.find('tokenizers/punkt')
-            st.info("Punkt tokenizer already available.")
-        except LookupError:
-            st.warning("Punkt tokenizer not found. Downloading it now...")
-            try:
-                nltk.download('punkt', quiet=False)
-                st.success("Punkt tokenizer downloaded successfully.")
-            except Exception as e:
-                st.error(f"NLTK initialization failed: {e}")
+            import ssl
+            ssl._create_default_https_context = ssl._create_unverified_context  # Fix for SSL issues
+            nltk.download('punkt', quiet=True)
+            st.success("NLTK 'punkt' downloaded successfully.")
+        except Exception as e:
+            st.error(f"NLTK initialization failed: {e}")
+    
 
     
     def _initialize_session_state(self):
