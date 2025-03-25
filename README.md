@@ -45,7 +45,7 @@ pip install sentence-transformers
 ## Usage
 ### Running the Streamlit App
 ```bash
-streamlit run app.py
+streamlit run hybrid_rag.py
 
 ollama list
 ollama pull mistral:latest
