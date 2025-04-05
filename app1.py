@@ -52,6 +52,9 @@ class AdvancedRAGSystem:
             import ssl
             ssl._create_default_https_context = ssl._create_unverified_context  # Fix for SSL issues
             nltk.download('punkt', quiet=True)
+            nltk.download('punkt_tab')
+            nltk.download('wordnet')
+            nltk.download('omw-1.4')
             st.success("NLTK 'punkt' downloaded successfully.")
         except Exception as e:
             st.error(f"NLTK initialization failed: {e}")
