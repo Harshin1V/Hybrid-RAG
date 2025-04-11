@@ -99,7 +99,7 @@ class AdvancedRAGSystem:
         """
         try:
             if model_type == 'llm':
-                return OllamaLLM(model=model_name or "mistral:latest")
+                return OllamaLLM(model=model_name or "mistral:latest",base_url="https://916d-2406-7400-51-fd96-95e5-b4cf-9997-7336.ngrok-free.app")
             elif model_type == 'embedding':
                 return HuggingFaceEmbeddings(
                     model_name=model_name or "sentence-transformers/all-mpnet-base-v2"
