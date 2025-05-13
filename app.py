@@ -176,7 +176,8 @@ class AdvancedRAGSystem:
             # Ensemble retriever
             ensemble_retriever = EnsembleRetriever(
                 retrievers=[semantic_retriever, bm25_retriever],
-                weights=[0.5, 0.5]
+                # weights=[0.5, 0.5]
+                weights=st.session_state.retriever_weights
             )
             
             return semantic_retriever, bm25_retriever, ensemble_retriever
