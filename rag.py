@@ -33,11 +33,7 @@ class AdvancedRAGSystem:
         """
         # Create necessary directories
         self._create_directories()
-        
-        # Initialize NLTK resources
         self._initialize_nltk()
-        
-        # Initialize session state
         self._initialize_session_state()
     
     def _create_directories(self):
