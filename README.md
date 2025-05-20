@@ -42,7 +42,7 @@ The **Advanced RAG System** is a Retrieval-Augmented Generation (RAG) applicatio
 ## Usage
 1. **Run the Application:**
     ```bash
-    streamlit run hybrid_rag.py
+    streamlit run app.py
     ```
 2. **Upload a PDF:** Use the file uploader to add a PDF document.
 3. **Ask a Question:** Enter your question in the provided text box.
