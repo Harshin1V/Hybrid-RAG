@@ -39,11 +39,18 @@ The **Advanced RAG System** is a Retrieval-Augmented Generation (RAG) applicatio
     ```bash
     python -c "import nltk; nltk.download('punkt')"
     ```
+   ollama serve
+
 
 ## Usage
 1. **Run the Application:**
     ```bash
-    streamlit run app.py
+    - ollama serve
+    - ngrok http 11434
+    - https://d3a2-12-34-56-78.ngrok.io
+    - if model_type == 'llm':
+                return OllamaLLM(model=model_name or "mistral:latest",base_url="https://916d-2406-7400-51-fd96-95e5-b4cf-9997-7336.ngrok-free.app")
+    - streamlit run app.py
     ```
 2. **Upload a PDF:** Use the file uploader to add a PDF document.
 3. **Ask a Question:** Enter your question in the provided text box.
