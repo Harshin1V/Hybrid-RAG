@@ -9,6 +9,7 @@ The **Advanced RAG System** is a Retrieval-Augmented Generation (RAG) applicatio
 - **Feedback Mechanism**: Collects user feedback and dynamically adjusts retriever weights.
 - **Feedback Dashboard**: Displays collected feedback for transparency.
 
+
 ## Project Structure
 ```
 ├── pdfs                 # Uploaded PDF documents
@@ -60,7 +61,36 @@ The **Advanced RAG System** is a Retrieval-Augmented Generation (RAG) applicatio
     ```python
     positive_ratio = positive_feedback / total_feedback
     st.session_state.retriever_weights = [positive_ratio, 1 - positive_ratio]
+
+                        +-----------------------------+
+                        |  Streamlit Cloud Frontend   |
+                        |  (https://your-app-url)     |
+                        +-------------+---------------+
+                                      |
+                                      | HTTPS
+                                      v
+                        +-------------+---------------+
+                        |  ngrok Tunnel                |
+                        |  (https://xyz.ngrok.io)      |
+                        +-------------+---------------+
+                                      |
+                                      | HTTP (localhost)
+                                      v
+                        +-------------+---------------+
+                        |  Ollama Backend (localhost) |
+                        |  http://localhost:11434     |
+                        +-----------------------------+
+    
     ```
+
+## 🚀 Features
+
+- PDF ingestion and chunking
+- Hybrid retrieval (BM25 + semantic with BGE embeddings)
+- Cosine reranking
+- Answer generation using Ollama LLM
+- Feedback mechanism for answer quality
+- Feedback dashboard
 
 ## Troubleshooting
 - **Model Loading Error:** Ensure models like Mistral or LLaMA are correctly installed.
