@@ -19,6 +19,7 @@ from langchain.retrievers import EnsembleRetriever
 import nltk
 from nltk.tokenize import word_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
+from transformers import AutoTokenizer
 
 class AdvancedRAGSystem:
     """
@@ -133,6 +134,14 @@ class AdvancedRAGSystem:
             # Load PDF
             loader = PDFPlumberLoader(file_path)
             documents = loader.load()
+
+            # tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+            
+            # text_splitter = RecursiveCharacterTextSplitter(
+            #     chunk_size=1000,
+            #     chunk_overlap=100,
+            #     length_function=lambda text: len(tokenizer.encode(text, add_special_tokens=False))
+            # )
             
             # Split documents
             text_splitter = RecursiveCharacterTextSplitter(
